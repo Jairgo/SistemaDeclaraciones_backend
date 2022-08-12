@@ -224,6 +224,11 @@ input ActividadFinancieraInput {
   tipoInstrumento: CatalogoInput
 }
 
+input ActividadEnajenacionInput {
+  remuneracion: MontoInput
+  tipoEnajenacion: CatalogoInput
+}
+
 input ServiciosProfesionalesInput {
   remuneracion: MontoInput
   tipoServicio: LimitedString
@@ -244,6 +249,11 @@ input ActividadFinancieraTotalInput {
   actividades: [ActividadFinancieraInput]
 }
 
+input ActividadEnajenacionTotalInput {
+  remuneracionTotal: MontoInput
+  actividades: [ActividadEnajenacionInput]
+}
+
 input ServiciosProfesionalesTotalInput {
   remuneracionTotal: MontoInput
   servicios: [ServiciosProfesionalesInput]
@@ -259,6 +269,7 @@ input IngresosInput {
   otrosIngresosMensualesTotal: MontoInput
   actividadIndustrialComercialEmpresarial: ActividadIndustrialTotalInput
   actividadFinanciera: ActividadFinancieraTotalInput
+  actividadEnajenacion: ActividadEnajenacionTotalInput
   serviciosProfesionales: ServiciosProfesionalesTotalInput
   otrosIngresos: OtrosIngresosTotalInput
   ingresoMensualNetoDeclarante: MontoInput
@@ -285,6 +296,7 @@ input ActividadAnualAnteriorInput {
   otrosIngresosTotal: MontoInput
   actividadIndustrialComercialEmpresarial: ActividadIndustrialTotalInput
   actividadFinanciera:  ActividadFinancieraTotalInput
+  actividadEnajenacion:  ActividadEnajenacionTotalInput
   serviciosProfesionales:  ServiciosProfesionalesTotalInput
   enajenacionBienes: EnajenacionBienesTotalInput
   otrosIngresos: OtrosIngresosTotalInput

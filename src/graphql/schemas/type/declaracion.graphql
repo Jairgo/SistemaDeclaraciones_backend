@@ -224,6 +224,11 @@ type ActividadFinanciera {
   tipoInstrumento: Catalogo
 }
 
+type ActividadEnajenacion {
+  remuneracion: Monto
+  tipoEnajenacion: Catalogo
+}
+
 type ServiciosProfesionales {
   remuneracion: Monto
   tipoServicio: LimitedString
@@ -244,6 +249,11 @@ type ActividadFinancieraTotal {
   actividades: [ActividadFinanciera]
 }
 
+type ActividadEnajenacionTotal {
+  remuneracionTotal: Monto
+  actividades: [ActividadEnajenacion]
+}
+
 type ServiciosProfesionalesTotal {
   remuneracionTotal: Monto
   servicios: [ServiciosProfesionales]
@@ -259,6 +269,7 @@ type Ingresos {
   otrosIngresosMensualesTotal: Monto
   actividadIndustrialComercialEmpresarial: ActividadIndustrialTotal
   actividadFinanciera: ActividadFinancieraTotal
+  actividadEnajenacion: ActividadEnajenacionTotal
   serviciosProfesionales: ServiciosProfesionalesTotal
   otrosIngresos: OtrosIngresosTotal
   ingresoMensualNetoDeclarante: Monto
@@ -285,6 +296,7 @@ type ActividadAnualAnterior {
   otrosIngresosTotal: Monto
   actividadIndustrialComercialEmpresarial: ActividadIndustrialTotal
   actividadFinanciera:  ActividadFinancieraTotal
+  actividadEnajenacion:  ActividadEnajenacionTotal
   serviciosProfesionales:  ServiciosProfesionalesTotal
   enajenacionBienes: EnajenacionBienesTotal
   otrosIngresos: OtrosIngresosTotal

@@ -229,6 +229,11 @@ interface ActividadFinanciera {
   tipoInstrumento?: Catalogo;
 }
 
+interface ActividadEnajenacion {
+  remuneracion?: Monto;
+  tipoEnajenacion?: Catalogo;
+}
+
 interface ServiciosProfesionales {
   remuneracion?: Monto;
   tipoServicio?: string;
@@ -249,6 +254,11 @@ interface ActividadFinancieraTotal {
   actividades?: ActividadFinanciera[];
 }
 
+interface ActividadEnajenacionTotal {
+  remuneracionTotal?: Monto;
+  actividades?: ActividadEnajenacion[];
+}
+
 interface ServiciosProfesionalesTotal {
   remuneracionTotal?: Monto;
   servicios?: ServiciosProfesionales[];
@@ -264,6 +274,7 @@ interface Ingresos {
   otrosIngresosMensualesTotal?: Monto;
   actividadIndustrialComercialEmpresarial?: ActividadIndustrialTotal;
   actividadFinanciera?: ActividadFinancieraTotal;
+  actividadEnajenacion?: ActividadEnajenacionTotal;
   serviciosProfesionales?: ServiciosProfesionalesTotal;
   otrosIngresos?: OtrosIngresosTotal;
   ingresoMensualNetoDeclarante?: Monto;
@@ -290,6 +301,7 @@ interface ActividadAnualAnterior {
   otrosIngresosTotal?: Monto;
   actividadIndustrialComercialEmpresarial?: ActividadIndustrialTotal;
   actividadFinanciera?: ActividadFinancieraTotal;
+  actividadEnajenacion?: ActividadEnajenacionTotal;
   serviciosProfesionales?: ServiciosProfesionalesTotal;
   enajenacionBienes?: EnajenacionBienesTotal;
   otrosIngresos?: OtrosIngresosTotal;

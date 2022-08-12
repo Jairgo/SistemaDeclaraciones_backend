@@ -1,4 +1,5 @@
 import { ActividadFinancieraTotalSchema } from './actividad_financiera_total';
+import { ActividadEnajenacionTotalSchema } from './actividad_enajenacion_total';
 import { ActividadIndustrialTotalSchema } from './actividad_industrial_total';
 import { EnajenacionBienesTotalSchema } from './enajenacion_bienes_total';
 import { MontoSchema } from './monto';
@@ -15,6 +16,7 @@ export const ActividadAnualAnteriorSchema = new Schema({
   otrosIngresosTotal: MontoSchema,
   actividadIndustrialComercialEmpresarial: ActividadIndustrialTotalSchema,
   actividadFinanciera: ActividadFinancieraTotalSchema,
+  actividadEnajenacion: ActividadEnajenacionTotalSchema,
   serviciosProfesionales: ServiciosProfesionalesTotalSchema,
   enajenacionBienes: EnajenacionBienesTotalSchema,
   otrosIngresos: OtrosIngresosTotalSchema,
