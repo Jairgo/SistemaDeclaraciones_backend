@@ -31,4 +31,8 @@ export const OtroEmpleoCargoComisionSchema = new Schema({
   telefonoOficina: TelefonoOficinaSchema,
   domicilioMexico: DomicilioMexicoSchema,
   domicilioExtranjero: DomicilioExtranjeroSchema,
+  aclaracionesObservaciones: {
+    type: String,
+    trim: true,
+  },
 });

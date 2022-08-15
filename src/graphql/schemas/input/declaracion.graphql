@@ -99,7 +99,7 @@ input DatosEmpleoCargoComisionInput {
   domicilioMexico: DomicilioMexicoInput
   domicilioExtranjero: DomicilioExtranjeroInput
   cuentaConOtroCargoPublico: Boolean
-  otroEmpleoCargoComision: [OtroEmpleoCargoComisionInput]
+  otroEmpleoCargoComision: OtroEmpleoCargoComisionInput
   aclaracionesObservaciones: LimitedString
 }
 
@@ -116,6 +116,7 @@ input OtroEmpleoCargoComisionInput {
   telefonoOficina: TelefonoOficinaInput
   domicilioMexico: DomicilioMexicoInput
   domicilioExtranjero: DomicilioExtranjeroInput
+  aclaracionesObservaciones: LimitedString
 }
 
 input ExperienciaInput {
