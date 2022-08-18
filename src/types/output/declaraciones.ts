@@ -111,7 +111,7 @@ interface DatosEmpleoCargoComision {
   domicilioMexico?: DomicilioMexico;
   domicilioExtranjero?: DomicilioExtranjero;
   cuentaConOtroCargoPublico?: boolean;
-  otroEmpleoCargoComision?: OtroEmpleoCargoComision[];
+  otroEmpleoCargoComision?: OtroEmpleoCargoComision;
   aclaracionesObservaciones?: string;
 }
 
@@ -128,6 +128,7 @@ interface OtroEmpleoCargoComision {
   telefonoOficina?: TelefonoOficina;
   domicilioMexico?: DomicilioMexico;
   domicilioExtranjero?: DomicilioExtranjero;
+  aclaracionesObservaciones?: string;
 }
 
 interface Experiencia {

@@ -99,7 +99,7 @@ type DatosEmpleoCargoComision {
   domicilioMexico: DomicilioMexico
   domicilioExtranjero: DomicilioExtranjero
   cuentaConOtroCargoPublico: Boolean
-  otroEmpleoCargoComision: [OtroEmpleoCargoComision]
+  otroEmpleoCargoComision: OtroEmpleoCargoComision
   aclaracionesObservaciones: LimitedString
 }
 
@@ -116,6 +116,7 @@ type OtroEmpleoCargoComision {
   telefonoOficina: TelefonoOficina
   domicilioMexico: DomicilioMexico
   domicilioExtranjero: DomicilioExtranjero
+  aclaracionesObservaciones: LimitedString
 }
 
 type Experiencia {

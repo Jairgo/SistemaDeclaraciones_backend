@@ -37,7 +37,7 @@ export const DatosEmpleoCargoComisionSchema = new Schema({
   domicilioMexico: DomicilioMexicoSchema,
   domicilioExtranjero: DomicilioExtranjeroSchema,
   cuentaConOtroCargoPublico: Boolean,
-  otroEmpleoCargoComision: [OtroEmpleoCargoComisionSchema],
+  otroEmpleoCargoComision: OtroEmpleoCargoComisionSchema,
   aclaracionesObservaciones: {
     type: String,
     trim: true,
