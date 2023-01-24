@@ -633,6 +633,7 @@ input DeclaracionesFilterInput {
 }
 
 input DeclaracionSeccionesInput {
+  anioEjercicio: Int
   datosGenerales: DatosGeneralesInput
   domicilioDeclarante: DomicilioDeclaranteInput
   datosCurricularesDeclarante: DatosCurricularesDeclaranteInput
