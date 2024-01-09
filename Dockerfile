@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node:16-buster as builder
 
 #MAINTAINER Sergio Rodríguez <sergio.rdzsg@gmail.com>
 
