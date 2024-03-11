@@ -16,7 +16,7 @@
     "Mongoose"
   ],
   "engines" : { 
-    "node" : "^14" 
+    "node" : "^16" 
   },
   "dependencies": {
     "@elastic/elasticsearch": "~7.12.0",
